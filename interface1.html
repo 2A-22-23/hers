@@ -1,28 +1,64 @@
 <htm>
     <head>
-    <title>Login</title>
+    <title>login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <body>
-        <div class="col-11 col-xl-4">
-            <a href="./index.html"><img src="images/logo.png" alt=""></a>
-            <!--h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">WonderWoman<span class="text-primary">.</span> </a></h1-->
-          </div>
-        <div class="loginbox">
-            <h1>login here</h1>
-            <form>
-                <p>  Username</p>
-
-                <from> method="post" action="<ajouteruser class="php"> 
-
-
+    <bodY>
+        <div>
+        <a href="index.php"><img src="images/logo.png" alt=""></a>
+        </div>
+            <div class="loginbox">
+                <img src="img1.png" class="avatar">
                
-                <input type="text"name="" placeholder ="enter username">
-                <p>  Password</p>
-                <input type="password" name="" placeholder="enter password">
-                <a href="./index.html"><input type ="submit"name="" value="login" ></a>
-                <a href="#">        forgot your password?</a> <br>
-                <a href="#">        you don't have  an account?</a> <br>
-            </form>
-    </body>
+                        <h1>Login </h1>
+                <form id="formAuthentication" class="mb-3" action="inscription.php" method="POST">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Nom</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="username"
+                                name="nom"
+                                placeholder="Enter your nom"
+                                autofocus
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Prenom</label>
+                        <input type="text" class="form-control" id="email" name="prenom" placeholder="Enter your prenom" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Telephone</label>
+                        <input type="text" class="form-control" id="email" name="tel" placeholder="Enter your Numero de telephone" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Adresse</label>
+                        <input type="text" class="form-control" id="email" name="adresse" placeholder="Enter your Adresse" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter your Email" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Login</label>
+                        <input type="text" class="form-control" id="email" name="login" placeholder="Enter your Login" />
+                    </div>
+                    <div class="mb-3 form-password-toggle">
+                        <label class="form-label" for="password">Mot De Passe</label>
+                        <div class="input-group input-group-merge">
+                            <input
+                                    type="password"
+                                    id="password"
+                                    class="form-control"
+                                    name="mdp"
+                                    placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                                    aria-describedby="password"
+                            />
+                            <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                        </div>
+                    </div>
+
+
+                    <button class="btn btn-primary d-grid w-100" name="submit">Sign up</button>
+                </form>
 
 </htm>
